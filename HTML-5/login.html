@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>login form</h1>
+    <button id="show">click here</button>
+    <dialog id="alert">
+        <button class="cls">X</button>
+        <div>
+            <h1>login form</h1>
+            <label for="">user name</label>
+            <input type="username">
+            <br><br>
+            <label for="">enter password</label>
+            <input type="password" placeholder="enter the password">
+            <br><br>
+            <button>submit</button>
+            <br><br>
+            
+            
+        </div>
+    </dialog>
+    <script>
+        var sh= document.getElementById('show');
+        var cl= document.querySelector('.cls');
+        var al=document.getElementById("alert");
+        sh.addEventListener('click', function(){
+            al.show();
+        });
+        cl.addEventListener('click', function(){
+            al.close();
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

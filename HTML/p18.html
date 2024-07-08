@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM INPUTS</h1>
+    <form action="">
+        <label for="">text input</label>
+        <input type="text" name="" id="">
+        <br><br>
+
+        <label for="">number input</label>
+        <input type="number" name="" id="">
+        <br><br>
+
+        <label for="">email input</label>
+        <input type="email" name="" id="" placeholder="sampledomain@.ext">
+        <br><br>
+
+        <label for="">email input </label>
+        <input type="email" name="" id="" placeholder="sandeep@.ext">
+        <br><br>
+        
+        <label for="">password</label>
+        <input type="password" name="" id="">
+        <br><br>
+
+        <label for="">date inputs</label>
+        <input type="date" name="" id="">
+        <br><br>
+        <label for="">date time (manual entry) (mm/dd/yyy HH:MM:SS)</label>
+        <input type="datetime" name="" id="" placeholder="mm/dd/yyy HH:MM:SS">
+        <br><br>
+
+        <label for="">date time local </label>
+        <input type="datetime-local" name="" id="">
+        <br><br>
+        <label for="">week</label>
+        <input type="week" name="" id="">
+        <br><br>
+
+        <label for="">time </label>
+        <input type="time" name="" id="">
+        <br><br>
+
+        <label for="">month</label>
+        <input type="month " name="" id="">
+        <br><br>
+
+        <label for="URL"></label>
+        <input type="url" name="" id="" placeholder="https://www.sandeep.ext">
+        <br><br>
+
+        <label for="">search</label>
+        <input type="search" name="" id="" placeholder="enter the search">
+        <br><br>
+
+        <label for="">color</label>
+        <input type="color" name="" id=""><!-- solid colors rgb(000)-limit is 255  value is 0-255-->
+        <br><br>
+
+        
+        <label for="">Range <span>*</span></label>
+        <input type="range" name="weight" id="weight" style="width: 50%;" min="0" max="100" value="25" step="5" onchange="getValue()">
+        <h3 id="output"></h3>
+        <br><br>
+    </form>
+        <script>
+            var x=document.getElementById('weight');
+            var out=document.getElementById('output');
+
+            function getValue(){
+                out.innerText=`${x.value} kg`;
+            }
+            getValue()
+        </script>
+
+
+        
+
+    
+</body>
+</html>
